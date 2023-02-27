@@ -51,4 +51,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## GH Pages
 
-* [Link to GitHub Pages](https://frontend-guy.github.io/mesto-react-auth/)
+* [Link to GitHub Pages](https://frontend-guy.github.io/react-mesto-auth/)
