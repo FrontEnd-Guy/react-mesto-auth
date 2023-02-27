@@ -43,8 +43,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Figma
 
-* [Link to layout in Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+* [Basic design layout](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+
+
+* [Authentication design](https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/Sprint-14-RU?node-id=0%3A1)
+
 
 ## GH Pages
 
-* [Link to GitHub Pages](https://frontend-guy.github.io/mesto-react/)
+* [Link to GitHub Pages](https://frontend-guy.github.io/mesto-react-auth/)
