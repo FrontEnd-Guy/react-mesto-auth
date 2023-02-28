@@ -13,7 +13,7 @@ export function InfoTooltip({ isOpen, onClose, status }) {
         ></button>
         <img src={!status ? signUpFail : signUpSuccess} />
         <h2 className="popup__title popup__title_signup-status">
-          {status === "error"
+          {!status
             ? "Something went wrong! Try again."
             : "You have successfully signed up!"}
         </h2>
