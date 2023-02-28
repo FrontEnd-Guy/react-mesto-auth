@@ -17,11 +17,11 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .profile__add-button:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 930px) {

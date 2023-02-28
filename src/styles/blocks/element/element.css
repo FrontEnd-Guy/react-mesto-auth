@@ -1,7 +1,8 @@
 .element {
   display: grid;
-  grid-template-areas: 'image image'
-                       'title like';
+  grid-template-areas:
+    "image image"
+    "title like";
   row-gap: 25px;
   background-color: #fff;
   border-radius: 10px;

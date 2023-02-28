@@ -13,9 +13,9 @@
   height: 20px;
   top: 20px;
   right: 20px;
-  transition: opacity .2s ease-in-out;
-  }
-  
-  .element__delete:hover {
-    opacity: .6;
-  }
+  transition: opacity 0.2s ease-in-out;
+}
+
+.element__delete:hover {
+  opacity: 0.6;
+}

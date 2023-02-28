@@ -6,7 +6,7 @@ Porting [the Mesto project](https://github.com/FrontEnd-Guy/mesto) from vanilla 
 
 The project is updated with Protected Routes and Authentication with React Router.
 
-"Mesto" is an interactive page where you can add photos, delete them and like them. 
+"Mesto" is an interactive page where you can add photos, delete them and like them.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -14,15 +14,15 @@ The project was created as part of my studies at [Yandex.Practicum](https://prak
 
 ## Tools used
 
-* React.js
-* React Router
-* Browser Local Storage
-* API
-* Hooks and Functional components
-* React DevTools
-* NPM
-* GitHub
-* Visual Studio Code
+- React.js
+- React Router
+- Browser Local Storage
+- API
+- Hooks and Functional components
+- React DevTools
+- NPM
+- GitHub
+- Visual Studio Code
 
 ## Available Scripts
 
@@ -43,12 +43,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Figma
 
-* [Basic design layout](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+- [Basic design layout](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 
-
-* [Authentication design](https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/Sprint-14-RU?node-id=0%3A1)
-
+- [Authentication design](https://www.figma.com/file/5H3gsn5lIGPwzBPby9jAOo/Sprint-14-RU?node-id=0%3A1)
 
 ## GH Pages
 
-* [Link to GitHub Pages](https://frontend-guy.github.io/react-mesto-auth/)
+- [Link to GitHub Pages](https://frontend-guy.github.io/react-mesto-auth/)

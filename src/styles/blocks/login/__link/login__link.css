@@ -1,9 +1,9 @@
 .login__link {
-    color: #fff;
-    text-decoration: none;
-    transition: opacity .2s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .login__link:hover {
-    opacity: .6;
+  opacity: 0.6;
 }

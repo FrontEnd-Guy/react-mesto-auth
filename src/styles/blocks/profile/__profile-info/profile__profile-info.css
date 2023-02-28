@@ -1,7 +1,8 @@
 .profile__profile-info {
   display: grid;
-  grid-template-areas: 'name edit-button'
-                       'job job';
+  grid-template-areas:
+    "name edit-button"
+    "job job";
   justify-items: center;
   align-content: center;
   row-gap: 8px;

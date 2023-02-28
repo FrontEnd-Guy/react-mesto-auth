@@ -12,11 +12,11 @@
   line-height: 22px;
   text-align: center;
   cursor: pointer;
-  transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .popup__save-button:enabled:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {
