@@ -11,11 +11,11 @@ import { ImagePopup } from "./ImagePopup";
 import { EditProfilePopup } from "./EditProfilePopup";
 import { EditAvatarPopup } from "./EditAvatarPopup";
 import { AddPlacePopup } from "./AddPlacePopup";
-import { PopupWithForm } from "./PopupWithForm";
 import { CurrentUserContext } from "../contexts/CurrentUserContext";
 import ProtectedRouteElement from "./ProtectedRoute";
 import { checkAuth, signIn, signUp } from "../utils/auth";
 import { InfoTooltip } from "./InfoTooltip";
+import { DeleteConfirmationPopup } from "./DeleteConfirmationPopup";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -23,7 +23,9 @@ function App() {
   const [isAddPlacePopupOpen, setAddPlacePopupState] = useState(false);
   const [isEditAvatarPopupOpen, setEditAvatarPopupState] = useState(false);
   const [isImagePopupOpen, setIsImagePopupOpen] = useState(false);
+  const [isDeleteCardPopupOpen, setIsDeleteCardPopupOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
+  const [cardForDelete, setCardForDelete] = useState(null);
   const [cards, setCards] = useState([]);
   const [isEditProfilePopupLoading, setIsEditProfilePopupLoading] =
     useState(false);
@@ -91,6 +93,7 @@ function App() {
   function handleInfoTooltipClose() {
     setInfoTooltipOpen(false);
   }
+
   useEffect(() => {
     if (loggedIn) {
       Promise.all([api.getUserInfo(), api.getCardsList()])
@@ -142,12 +145,19 @@ function App() {
     setAddPlacePopupState(true);
   }
 
+  function handleDeleteCardClick(card) {
+    setCardForDelete(card);
+    setIsDeleteCardPopupOpen(true);
+  }
+
   function closeAllPopups() {
     setEditAvatarPopupState(false);
     setAddPlacePopupState(false);
     setEditProfilePopupState(false);
     setIsImagePopupOpen(false);
+    setIsDeleteCardPopupOpen(false);
     setSelectedCard(null);
+    setCardForDelete(null);
   }
 
   function handleUpdateUser(data) {
@@ -198,7 +208,7 @@ function App() {
               loggedIn={loggedIn}
               cards={cards}
               onCardLike={handleCardLike}
-              onCardDelete={handleCardDelete}
+              onCardDelete={handleDeleteCardClick}
               onCardClick={handleCardClick}
               onEditProfile={handleEditProfileClick}
               onAddPlace={handleAddPlaceClick}
@@ -231,9 +241,11 @@ function App() {
         onAddPlace={handleAddPlaceSubmit}
         buttonText={isAddPlacePopupLoading ? "Saving..." : "Save"}
       />
-      <PopupWithForm
-        title="Are you sure?"
-        name="delete-card"
+      <DeleteConfirmationPopup
+        card={cardForDelete}
+        isOpen={isDeleteCardPopupOpen}
+        onClose={closeAllPopups}
+        onDelete={handleCardDelete}
         buttonText="Yes"
       />
       <EditAvatarPopup
